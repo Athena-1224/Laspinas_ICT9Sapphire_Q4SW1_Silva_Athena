@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Seatwork #1</title>
+
+   <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;        
+            text-align: center;
+            margin-top: 80px;
+            background-color: burlywood;
+        }
+        .container {
+            background-color: white;
+            padding: 35px;
+            width: 500px;
+            margin: auto;
+            border: 13px solid lightgoldenrodyellow;
+            border-radius: 13px;
+        }
+        input {
+            padding: 6px;
+            width: 80%;
+            margin-bottom: 10px;
+            border-radius: 35px;
+            border: 2px solid #ccc;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        button {
+            padding: 10px 90px;
+            background-color: wheat;
+            border: wheat;
+            border-radius: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        output {
+            margin-top: 15px;
+            text-align: left;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+        }
+        input[type="checkbox"] {
+            width: auto;
+            padding: 0;
+            margin: 0 0.25rem 0 0;
+            vertical-align: middle;
+        }
+    </style>
+
+</head>
+<body>
+    
+<div class="container">
+
+    <img src="https://clinicaespecializadaemanuel.com/wp-content/uploads/2023/06/doc-user.png" alt="User Icon" width="90" height="90">
+    <h1>Log-In </h1>
+
+    <form onsubmit="authenticate()">
+
+        <label>Username: </label><br>
+        <input type="text" id="uname" placeholder="Enter Username" required><br>
+        
+        <label>Password: </label><br>
+        <input type="password" id="pass" placeholder="Enter Password" required>
+        <br><br>
+
+        <div class="form-check" style="text-align: left;">
+            <input type="checkbox" class="form-check-input" id="check1"
+            name="option1" value="checked">
+            <label class="form-check-label" for="check1">Stay logged in</label>
+        </div> <br>
+
+        <div class="button-row">
+            <button type="submit"  id="login" class="btn-login">Login</button>
+            <button type="button" id="cancel" class="btn-cancel">Cancel</button>
+        </div> <br>
+
+        <p style="color: blue;"> Forgot username/password? </p>
+
+    </form>
+    
+
+</div>
+
+<script>
+
+function authenticate() {
+
+    var sapphire1 = document.getElementById("uname").value;
+    var sapphire2 = document.getElementById("pass").value;
+
+    if (sapphire1 === 'student#29' && sapphire2 === '12345') {
+        alert("Welcome " + sapphire1 + "!");
+    }else{
+        alert("Incorrect username/password");
+    }
+
+}
+
+</script>
+
+</body>
+</html>
